@@ -2,3 +2,5 @@
 
 1. gt ignore y proyecto ionic.
 2. carpeta www y modificacion del git ignore.
+3. pantalla de home, mes, meses, nuevo mes.
+4. local storage de meses en app.component.ts.

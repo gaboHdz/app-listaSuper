@@ -3,16 +3,13 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
-
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any = 'HomePage';
 
   pages: Array<{title: string, component: any}>;
 
@@ -21,8 +18,8 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage }
+      { title: 'Home', component: 'HomePage' },
+      { title: 'Meses', component: 'MesesPage'}
     ];
 
   }
@@ -31,6 +28,8 @@ export class MyApp {
     this.platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
+      let meses = [{ id: 1, mes:'Enero'},{ id: 2, mes:'Febrero'},{ id: 3, mes:'Marzo'},{ id: 4, mes:'Abril'}];
+      window.localStorage.setItem('meses', JSON.stringify(meses));
       this.statusBar.styleDefault();
       this.splashScreen.hide();
     });
