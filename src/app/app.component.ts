@@ -28,8 +28,6 @@ export class MyApp {
     this.platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
-      let meses = [{ id: 1, mes:'Enero'},{ id: 2, mes:'Febrero'},{ id: 3, mes:'Marzo'},{ id: 4, mes:'Abril'}];
-      window.localStorage.setItem('meses', JSON.stringify(meses));
       this.statusBar.styleDefault();
       this.splashScreen.hide();
     });

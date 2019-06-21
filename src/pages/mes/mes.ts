@@ -17,10 +17,14 @@ export class MesPage {
 
   public mes;
 
+  public productos;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
 
     this.mes = this.navParams.get('mes');
+    this.productos = this.mes.productos;
     console.log('mes => ',this.mes)
+    console.log('productos => ',this.productos)
   }
 
   ionViewDidLoad() {

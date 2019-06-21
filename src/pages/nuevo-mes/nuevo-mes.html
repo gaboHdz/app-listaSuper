@@ -12,4 +12,49 @@
 
 <ion-content padding>
 
+  <ion-card *ngIf="banderaNombreMes == false">
+    <ion-list>
+
+      <ion-list-header class="centrar-texto">
+        Mes
+      </ion-list-header>
+
+      <ion-item>
+        <ion-label stacked>Nombre mes</ion-label>
+        <ion-input [(ngModel)]="nombreMes" type="text"></ion-input>
+      </ion-item>
+
+    </ion-list>
+
+    <div padding>
+      <button (click)="crearNombreMes()" ion-button block>Crear</button>
+    </div>
+
+  </ion-card>
+
+  <ion-card *ngIf="banderaNombreMes == true">
+    <ion-list>
+
+      <ion-list-header class="centrar-texto">
+        Producto
+      </ion-list-header>
+
+      <ion-item>
+        <ion-label stacked>Nombre</ion-label>
+        <ion-input [(ngModel)]="nombreProd" type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>Cantidad</ion-label>
+        <ion-input [(ngModel)]="cantidadProd" type="text"></ion-input>
+      </ion-item>
+
+    </ion-list>
+
+    <div padding>
+      <button (click)="agregarProducto()" ion-button block>Añadir</button>
+    </div>
+
+  </ion-card>
+
 </ion-content>

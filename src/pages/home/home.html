@@ -8,21 +8,13 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-item>
-    <ion-thumbnail slot="end">
-      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
-    </ion-thumbnail>
-    <ion-label>fecha : {{fecha | date:'short'}}</ion-label>
-  </ion-item>
-
-  <ion-thumbnail>
-    <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
-  </ion-thumbnail>
-
-  <ion-item>
-    <ion-thumbnail slot="end">
-      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
-    </ion-thumbnail>
-    <ion-label>Item Thumbnail</ion-label>
-  </ion-item>
+  <ion-card>
+      <ion-card-header>
+          Fecha : {{fecha | date:'short'}}
+      </ion-card-header>
+      <ion-card-content>
+          Hola esto es una app para que puedar dar de alta tu lista de super para 4 semanas.
+          Poco a poco se mejorara.
+      </ion-card-content>
+    </ion-card>
 </ion-content>

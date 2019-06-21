@@ -17,20 +17,16 @@
       </button>
     </ion-buttons>
 
-    <ion-title>meses</ion-title>
+    <ion-title>Tus meses</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
 
   <ion-card>
-    <ion-card-header>
-      Meses
-    </ion-card-header>
-
     <ion-list>
       <button *ngFor="let m of meses" ion-item (click)='verMes(m)'>
-        {{m.mes}}
+        {{m.mes[0].nombre}}
       </button>
     </ion-list>
   </ion-card>

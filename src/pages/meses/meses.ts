@@ -18,6 +18,8 @@ export class MesesPage {
   public meses = JSON.parse(window.localStorage.getItem('meses'));
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+    console.log('meses => ', this.meses)
   }
 
   ionViewDidLoad() {
