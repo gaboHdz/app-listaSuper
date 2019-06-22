@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { stringify } from '@angular/compiler/src/util';
 
 /**
  * Generated class for the NuevoMesPage page.
@@ -33,7 +32,7 @@ export class NuevoMesPage {
   public nombreProd;
   public cantidadProd;
   public producto;
-  public productos;
+  public productos = [];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
 
@@ -75,6 +74,17 @@ export class NuevoMesPage {
   }
 
 
+  agregarProductoLocalStorage(){
+
+    this.mesesLocalSrorage[this.contadorMesesId-1].productos = this.productos;
+    window.localStorage.setItem('meses', JSON.stringify(this.mesesLocalSrorage));
+
+    console.log('meses con producto => ', this.mesesLocalSrorage)
+
+    this.navCtrl.setRoot('MesesPage')
+
+  }
+
   agregarProducto(){
 
     console.log('posicion mes => ',this.mesesLocalSrorage[this.contadorMesesId-1])
@@ -94,12 +104,12 @@ export class NuevoMesPage {
       historial: ''
     }
 
-    this.mesesLocalSrorage[this.contadorMesesId-1].productos.push(this.producto);
-    window.localStorage.setItem('meses', JSON.stringify(this.mesesLocalSrorage));
+    this.productos.push(this.producto);
 
-    console.log('meses con producto => ', this.mesesLocalSrorage)
+    this.nombreProd = null;
+    this.cantidadProd = null;
 
-    this.navCtrl.setRoot('MesesPage')
+    console.log('lista productos => ',this.productos)
 
   }
 

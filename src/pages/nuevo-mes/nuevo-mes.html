@@ -6,7 +6,7 @@
 -->
 <ion-header>
   <ion-navbar>
-    <ion-title>nuevoMes</ion-title>
+    <ion-title>Mes nuevo</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -20,7 +20,7 @@
       </ion-list-header>
 
       <ion-item>
-        <ion-label stacked>Nombre mes</ion-label>
+        <ion-label stacked>Nombre :</ion-label>
         <ion-input [(ngModel)]="nombreMes" type="text"></ion-input>
       </ion-item>
 
@@ -40,12 +40,12 @@
       </ion-list-header>
 
       <ion-item>
-        <ion-label stacked>Nombre</ion-label>
+        <ion-label stacked>Nombre :</ion-label>
         <ion-input [(ngModel)]="nombreProd" type="text"></ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-label stacked>Cantidad</ion-label>
+        <ion-label stacked>Cantidad :</ion-label>
         <ion-input [(ngModel)]="cantidadProd" type="text"></ion-input>
       </ion-item>
 
@@ -53,6 +53,34 @@
 
     <div padding>
       <button (click)="agregarProducto()" ion-button block>Añadir</button>
+    </div>
+
+  </ion-card>
+
+  <ion-card *ngIf="productos.length > 0">
+    <ion-list>
+
+      <ion-list-header class="centrar-texto">
+        Productos añadidos
+      </ion-list-header>
+
+      <ion-card>
+        <ion-grid>
+          <ion-row class="color-naranja">
+            <ion-col class="centrar-texto" col-sm-6 col-md-6 col-lg-6>Nombre</ion-col>
+            <ion-col class="centrar-texto" col-sm-6 col-md-6 col-lg-6>Cantidad</ion-col>
+          </ion-row>
+          <ion-row *ngFor="let prod of productos">
+            <ion-col class="centrar-texto" col-sm-6 col-md-6 col-lg-6>{{prod.id}} - {{prod.nombre}}</ion-col>
+            <ion-col class="centrar-texto" col-sm-6 col-md-6 col-lg-6>{{prod.cantidad}}</ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card>
+
+    </ion-list>
+
+    <div padding>
+      <button (click)="agregarProductoLocalStorage()" ion-button block>Añadir todos</button>
     </div>
 
   </ion-card>

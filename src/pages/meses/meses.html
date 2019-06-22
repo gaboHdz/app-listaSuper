@@ -24,10 +24,14 @@
 <ion-content padding>
 
   <ion-card>
-    <ion-list>
+    <ion-list *ngIf="meses !=null">
       <button *ngFor="let m of meses" ion-item (click)='verMes(m)'>
         {{m.mes[0].nombre}}
       </button>
+    </ion-list>
+
+    <ion-list *ngIf="meses ==null">
+      <p>No hay datos que mostrar</p>
     </ion-list>
   </ion-card>
 

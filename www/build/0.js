@@ -68,6 +68,7 @@ var NuevoMesPage = /** @class */ (function () {
         this.navParams = navParams;
         this.banderaNombreMes = false;
         this.mesesLocalSrorage = [];
+        this.productos = [];
         this.mesesLocalSrorage = JSON.parse(window.localStorage.getItem('meses'));
         if (this.mesesLocalSrorage != null) {
             this.contadorMesesId = this.mesesLocalSrorage.length + 1;
@@ -95,6 +96,12 @@ var NuevoMesPage = /** @class */ (function () {
             this.banderaNombreMes = true;
         }
     };
+    NuevoMesPage.prototype.agregarProductoLocalStorage = function () {
+        this.mesesLocalSrorage[this.contadorMesesId - 1].productos = this.productos;
+        window.localStorage.setItem('meses', JSON.stringify(this.mesesLocalSrorage));
+        console.log('meses con producto => ', this.mesesLocalSrorage);
+        this.navCtrl.setRoot('MesesPage');
+    };
     NuevoMesPage.prototype.agregarProducto = function () {
         console.log('posicion mes => ', this.mesesLocalSrorage[this.contadorMesesId - 1]);
         if (this.mesesLocalSrorage[this.contadorMesesId - 1].productos != null) {
@@ -109,18 +116,19 @@ var NuevoMesPage = /** @class */ (function () {
             cantidad: this.cantidadProd,
             historial: ''
         };
-        this.mesesLocalSrorage[this.contadorMesesId - 1].productos.push(this.producto);
-        window.localStorage.setItem('meses', JSON.stringify(this.mesesLocalSrorage));
-        console.log('meses con producto => ', this.mesesLocalSrorage);
-        this.navCtrl.setRoot('MesesPage');
+        this.productos.push(this.producto);
+        this.nombreProd = null;
+        this.cantidadProd = null;
+        console.log('lista productos => ', this.productos);
     };
     NuevoMesPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-nuevo-mes',template:/*ion-inline-start:"/Users/centralzone/Documents/ionic/app-listaSuper/src/pages/nuevo-mes/nuevo-mes.html"*/'<!--\n  Generated template for the NuevoMesPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <ion-title>nuevoMes</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <ion-card *ngIf="banderaNombreMes == false">\n    <ion-list>\n\n      <ion-list-header class="centrar-texto">\n        Mes\n      </ion-list-header>\n\n      <ion-item>\n        <ion-label stacked>Nombre mes</ion-label>\n        <ion-input [(ngModel)]="nombreMes" type="text"></ion-input>\n      </ion-item>\n\n    </ion-list>\n\n    <div padding>\n      <button (click)="crearNombreMes()" ion-button block>Crear</button>\n    </div>\n\n  </ion-card>\n\n  <ion-card *ngIf="banderaNombreMes == true">\n    <ion-list>\n\n      <ion-list-header class="centrar-texto">\n        Producto\n      </ion-list-header>\n\n      <ion-item>\n        <ion-label stacked>Nombre</ion-label>\n        <ion-input [(ngModel)]="nombreProd" type="text"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label stacked>Cantidad</ion-label>\n        <ion-input [(ngModel)]="cantidadProd" type="text"></ion-input>\n      </ion-item>\n\n    </ion-list>\n\n    <div padding>\n      <button (click)="agregarProducto()" ion-button block>Añadir</button>\n    </div>\n\n  </ion-card>\n\n</ion-content>'/*ion-inline-end:"/Users/centralzone/Documents/ionic/app-listaSuper/src/pages/nuevo-mes/nuevo-mes.html"*/,
+            selector: 'page-nuevo-mes',template:/*ion-inline-start:"C:\Users\gabriel.hernandez\Documents\cordova\miApp\app-listaSuper\src\pages\nuevo-mes\nuevo-mes.html"*/'<!--\n\n  Generated template for the NuevoMesPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Mes nuevo</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n  <ion-card *ngIf="banderaNombreMes == false">\n\n    <ion-list>\n\n\n\n      <ion-list-header class="centrar-texto">\n\n        Mes\n\n      </ion-list-header>\n\n\n\n      <ion-item>\n\n        <ion-label stacked>Nombre :</ion-label>\n\n        <ion-input [(ngModel)]="nombreMes" type="text"></ion-input>\n\n      </ion-item>\n\n\n\n    </ion-list>\n\n\n\n    <div padding>\n\n      <button (click)="crearNombreMes()" ion-button block>Crear</button>\n\n    </div>\n\n\n\n  </ion-card>\n\n\n\n  <ion-card *ngIf="banderaNombreMes == true">\n\n    <ion-list>\n\n\n\n      <ion-list-header class="centrar-texto">\n\n        Producto\n\n      </ion-list-header>\n\n\n\n      <ion-item>\n\n        <ion-label stacked>Nombre :</ion-label>\n\n        <ion-input [(ngModel)]="nombreProd" type="text"></ion-input>\n\n      </ion-item>\n\n\n\n      <ion-item>\n\n        <ion-label stacked>Cantidad :</ion-label>\n\n        <ion-input [(ngModel)]="cantidadProd" type="text"></ion-input>\n\n      </ion-item>\n\n\n\n    </ion-list>\n\n\n\n    <div padding>\n\n      <button (click)="agregarProducto()" ion-button block>Añadir</button>\n\n    </div>\n\n\n\n  </ion-card>\n\n\n\n  <ion-card *ngIf="productos.length > 0">\n\n    <ion-list>\n\n\n\n      <ion-list-header class="centrar-texto">\n\n        Productos añadidos\n\n      </ion-list-header>\n\n\n\n      <ion-card>\n\n        <ion-grid>\n\n          <ion-row class="color-naranja">\n\n            <ion-col class="centrar-texto" col-sm-6 col-md-6 col-lg-6>Nombre</ion-col>\n\n            <ion-col class="centrar-texto" col-sm-6 col-md-6 col-lg-6>Cantidad</ion-col>\n\n          </ion-row>\n\n          <ion-row *ngFor="let prod of productos">\n\n            <ion-col class="centrar-texto" col-sm-6 col-md-6 col-lg-6>{{prod.id}} - {{prod.nombre}}</ion-col>\n\n            <ion-col class="centrar-texto" col-sm-6 col-md-6 col-lg-6>{{prod.cantidad}}</ion-col>\n\n          </ion-row>\n\n        </ion-grid>\n\n      </ion-card>\n\n\n\n    </ion-list>\n\n\n\n    <div padding>\n\n      <button (click)="agregarProductoLocalStorage()" ion-button block>Añadir todos</button>\n\n    </div>\n\n\n\n  </ion-card>\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\gabriel.hernandez\Documents\cordova\miApp\app-listaSuper\src\pages\nuevo-mes\nuevo-mes.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object])
     ], NuevoMesPage);
     return NuevoMesPage;
+    var _a, _b;
 }());
 
 //# sourceMappingURL=nuevo-mes.js.map
