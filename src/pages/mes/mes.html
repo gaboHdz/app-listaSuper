@@ -21,7 +21,7 @@
       </ion-row>
       <ion-row *ngFor="let prod of productos; let i = index">
         <ion-col class="centrar-texto" col-sm-4 col-md-4 col-lg-4>{{ i+1 }} - {{prod.nombre}}</ion-col>
-        <ion-col class="centrar-texto" col-sm-4 col-md-4 col-lg-4>{{prod.cantidad}}</ion-col>
+        <ion-col class="centrar-texto" col-sm-4 col-md-4 col-lg-4>{{prod.cantidad}} / {{prod.tipo}}</ion-col>
         <ion-col class="centrar-texto" col-sm-4 col-md-4 col-lg-4>{{prod.historial}}</ion-col>
       </ion-row>
     </ion-grid>

@@ -30,11 +30,11 @@ var map = {
 		2
 	],
 	"../pages/meses/meses.module": [
-		270,
+		269,
 		1
 	],
 	"../pages/nuevo-mes/nuevo-mes.module": [
-		269,
+		270,
 		0
 	]
 };
@@ -105,8 +105,8 @@ var AppModule = /** @class */ (function () {
                     links: [
                         { loadChildren: '../pages/home/home.module#HomePageModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/mes/mes.module#MesPageModule', name: 'MesPage', segment: 'mes', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/nuevo-mes/nuevo-mes.module#NuevoMesPageModule', name: 'NuevoMesPage', segment: 'nuevo-mes', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/meses/meses.module#MesesPageModule', name: 'MesesPage', segment: 'meses', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/meses/meses.module#MesesPageModule', name: 'MesesPage', segment: 'meses', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/nuevo-mes/nuevo-mes.module#NuevoMesPageModule', name: 'NuevoMesPage', segment: 'nuevo-mes', priority: 'low', defaultHistory: [] }
                     ]
                 }),
             ],

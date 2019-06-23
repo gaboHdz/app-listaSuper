@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 269:
+/***/ 270:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NuevoMesPageModule", function() { return NuevoMesPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__nuevo_mes__ = __webpack_require__(273);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__nuevo_mes__ = __webpack_require__(274);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var NuevoMesPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 273:
+/***/ 274:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -114,21 +114,22 @@ var NuevoMesPage = /** @class */ (function () {
             id: this.contadorProdId,
             nombre: this.nombreProd,
             cantidad: this.cantidadProd,
+            tipo: this.tipoCantidad,
             historial: ''
         };
         this.productos.push(this.producto);
         this.nombreProd = null;
         this.cantidadProd = null;
+        this.tipoCantidad = null;
         console.log('lista productos => ', this.productos);
     };
     NuevoMesPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-nuevo-mes',template:/*ion-inline-start:"C:\Users\gabriel.hernandez\Documents\cordova\miApp\app-listaSuper\src\pages\nuevo-mes\nuevo-mes.html"*/'<!--\n\n  Generated template for the NuevoMesPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Mes nuevo</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n  <ion-card *ngIf="banderaNombreMes == false">\n\n    <ion-list>\n\n\n\n      <ion-list-header class="centrar-texto">\n\n        Mes\n\n      </ion-list-header>\n\n\n\n      <ion-item>\n\n        <ion-label stacked>Nombre :</ion-label>\n\n        <ion-input [(ngModel)]="nombreMes" type="text"></ion-input>\n\n      </ion-item>\n\n\n\n    </ion-list>\n\n\n\n    <div padding>\n\n      <button (click)="crearNombreMes()" ion-button block>Crear</button>\n\n    </div>\n\n\n\n  </ion-card>\n\n\n\n  <ion-card *ngIf="banderaNombreMes == true">\n\n    <ion-list>\n\n\n\n      <ion-list-header class="centrar-texto">\n\n        Producto\n\n      </ion-list-header>\n\n\n\n      <ion-item>\n\n        <ion-label stacked>Nombre :</ion-label>\n\n        <ion-input [(ngModel)]="nombreProd" type="text"></ion-input>\n\n      </ion-item>\n\n\n\n      <ion-item>\n\n        <ion-label stacked>Cantidad :</ion-label>\n\n        <ion-input [(ngModel)]="cantidadProd" type="text"></ion-input>\n\n      </ion-item>\n\n\n\n    </ion-list>\n\n\n\n    <div padding>\n\n      <button (click)="agregarProducto()" ion-button block>Añadir</button>\n\n    </div>\n\n\n\n  </ion-card>\n\n\n\n  <ion-card *ngIf="productos.length > 0">\n\n    <ion-list>\n\n\n\n      <ion-list-header class="centrar-texto">\n\n        Productos añadidos\n\n      </ion-list-header>\n\n\n\n      <ion-card>\n\n        <ion-grid>\n\n          <ion-row class="color-naranja">\n\n            <ion-col class="centrar-texto" col-sm-6 col-md-6 col-lg-6>Nombre</ion-col>\n\n            <ion-col class="centrar-texto" col-sm-6 col-md-6 col-lg-6>Cantidad</ion-col>\n\n          </ion-row>\n\n          <ion-row *ngFor="let prod of productos">\n\n            <ion-col class="centrar-texto" col-sm-6 col-md-6 col-lg-6>{{prod.id}} - {{prod.nombre}}</ion-col>\n\n            <ion-col class="centrar-texto" col-sm-6 col-md-6 col-lg-6>{{prod.cantidad}}</ion-col>\n\n          </ion-row>\n\n        </ion-grid>\n\n      </ion-card>\n\n\n\n    </ion-list>\n\n\n\n    <div padding>\n\n      <button (click)="agregarProductoLocalStorage()" ion-button block>Añadir todos</button>\n\n    </div>\n\n\n\n  </ion-card>\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\gabriel.hernandez\Documents\cordova\miApp\app-listaSuper\src\pages\nuevo-mes\nuevo-mes.html"*/,
+            selector: 'page-nuevo-mes',template:/*ion-inline-start:"C:\Users\gabriel.hernandez\Documents\cordova\miApp\app-listaSuper\src\pages\nuevo-mes\nuevo-mes.html"*/'<!--\n\n  Generated template for the NuevoMesPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Mes nuevo</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n  <ion-card *ngIf="banderaNombreMes == false">\n\n    <ion-list>\n\n\n\n      <ion-list-header class="centrar-texto">\n\n        Mes\n\n      </ion-list-header>\n\n\n\n      <ion-item>\n\n        <ion-label stacked>Nombre :</ion-label>\n\n        <ion-input [(ngModel)]="nombreMes" type="text"></ion-input>\n\n      </ion-item>\n\n\n\n    </ion-list>\n\n\n\n    <div padding>\n\n      <button (click)="crearNombreMes()" ion-button block>Crear</button>\n\n    </div>\n\n\n\n  </ion-card>\n\n\n\n  <ion-card *ngIf="banderaNombreMes == true">\n\n    <ion-list>\n\n\n\n      <ion-list-header class="centrar-texto">\n\n        Producto\n\n      </ion-list-header>\n\n        \n\n        <ion-grid>\n\n          <ion-row>\n\n              <ion-col col-sm-12 col-md-12 col-lg-12>\n\n                  <ion-label stacked>Nombre :</ion-label>\n\n                  <ion-input [(ngModel)]="nombreProd" type="text"></ion-input>\n\n              </ion-col>\n\n          </ion-row>\n\n          <ion-row>\n\n            <ion-col col-sm-6 col-md-6 col-lg-6><ion-label stacked>Cantidad :</ion-label>\n\n              <ion-input [(ngModel)]="cantidadProd" type="text"></ion-input></ion-col>\n\n            <ion-col col-sm-6 col-md-6 col-lg-6><ion-label stacked>Tipo :</ion-label>\n\n              <ion-input [(ngModel)]="tipoCantidad" type="text"></ion-input></ion-col>\n\n          </ion-row>\n\n        </ion-grid>\n\n\n\n    </ion-list>\n\n\n\n    <div padding>\n\n      <button (click)="agregarProducto()" ion-button block>Añadir</button>\n\n    </div>\n\n\n\n  </ion-card>\n\n\n\n  <ion-card *ngIf="productos.length > 0">\n\n    <ion-list>\n\n\n\n      <ion-list-header class="centrar-texto">\n\n        Productos añadidos\n\n      </ion-list-header>\n\n\n\n      <ion-card>\n\n        <ion-grid>\n\n          <ion-row class="color-naranja">\n\n            <ion-col class="centrar-texto" col-sm-6 col-md-6 col-lg-6>Nombre</ion-col>\n\n            <ion-col class="centrar-texto" col-sm-6 col-md-6 col-lg-6>Cantidad</ion-col>\n\n          </ion-row>\n\n          <ion-row *ngFor="let prod of productos">\n\n            <ion-col class="centrar-texto" col-sm-6 col-md-6 col-lg-6>{{prod.id}} - {{prod.nombre}}</ion-col>\n\n            <ion-col class="centrar-texto" col-sm-6 col-md-6 col-lg-6>{{prod.cantidad}} / {{prod.tipo}}</ion-col>\n\n          </ion-row>\n\n        </ion-grid>\n\n      </ion-card>\n\n\n\n    </ion-list>\n\n\n\n    <div padding>\n\n      <button class="boton-naranaja" (click)="agregarProductoLocalStorage()" ion-button block>Añadir todos</button>\n\n    </div>\n\n\n\n  </ion-card>\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\gabriel.hernandez\Documents\cordova\miApp\app-listaSuper\src\pages\nuevo-mes\nuevo-mes.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], NuevoMesPage);
     return NuevoMesPage;
-    var _a, _b;
 }());
 
 //# sourceMappingURL=nuevo-mes.js.map

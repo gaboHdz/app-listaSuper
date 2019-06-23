@@ -31,6 +31,7 @@ export class NuevoMesPage {
   public contadorProdId;
   public nombreProd;
   public cantidadProd;
+  public tipoCantidad;
   public producto;
   public productos = [];
 
@@ -101,6 +102,7 @@ export class NuevoMesPage {
       id: this.contadorProdId,
       nombre: this.nombreProd,
       cantidad: this.cantidadProd,
+      tipo: this.tipoCantidad,
       historial: ''
     }
 
@@ -108,6 +110,7 @@ export class NuevoMesPage {
 
     this.nombreProd = null;
     this.cantidadProd = null;
+    this.tipoCantidad = null;
 
     console.log('lista productos => ',this.productos)
 

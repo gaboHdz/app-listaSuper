@@ -38,16 +38,21 @@
       <ion-list-header class="centrar-texto">
         Producto
       </ion-list-header>
-
-      <ion-item>
-        <ion-label stacked>Nombre :</ion-label>
-        <ion-input [(ngModel)]="nombreProd" type="text"></ion-input>
-      </ion-item>
-
-      <ion-item>
-        <ion-label stacked>Cantidad :</ion-label>
-        <ion-input [(ngModel)]="cantidadProd" type="text"></ion-input>
-      </ion-item>
+        
+        <ion-grid>
+          <ion-row>
+              <ion-col col-sm-12 col-md-12 col-lg-12>
+                  <ion-label stacked>Nombre :</ion-label>
+                  <ion-input [(ngModel)]="nombreProd" type="text"></ion-input>
+              </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-sm-6 col-md-6 col-lg-6><ion-label stacked>Cantidad :</ion-label>
+              <ion-input [(ngModel)]="cantidadProd" type="text"></ion-input></ion-col>
+            <ion-col col-sm-6 col-md-6 col-lg-6><ion-label stacked>Tipo :</ion-label>
+              <ion-input [(ngModel)]="tipoCantidad" type="text"></ion-input></ion-col>
+          </ion-row>
+        </ion-grid>
 
     </ion-list>
 
@@ -72,7 +77,7 @@
           </ion-row>
           <ion-row *ngFor="let prod of productos">
             <ion-col class="centrar-texto" col-sm-6 col-md-6 col-lg-6>{{prod.id}} - {{prod.nombre}}</ion-col>
-            <ion-col class="centrar-texto" col-sm-6 col-md-6 col-lg-6>{{prod.cantidad}}</ion-col>
+            <ion-col class="centrar-texto" col-sm-6 col-md-6 col-lg-6>{{prod.cantidad}} / {{prod.tipo}}</ion-col>
           </ion-row>
         </ion-grid>
       </ion-card>
@@ -80,7 +85,7 @@
     </ion-list>
 
     <div padding>
-      <button (click)="agregarProductoLocalStorage()" ion-button block>Añadir todos</button>
+      <button class="boton-naranaja" (click)="agregarProductoLocalStorage()" ion-button block>Añadir todos</button>
     </div>
 
   </ion-card>
