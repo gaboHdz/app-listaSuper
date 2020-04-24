@@ -1,5 +1,9 @@
 # app-listaSuper
 
+App en procrso para ser ocupada para ir al super y llevar un control de la compra de tus productos
+
+url = https://gabohdz.github.io/app-listaSuper/www/index.html
+
 1. gt ignore y proyecto ionic.
 2. carpeta www y modificacion del git ignore.
 3. pantalla de home, mes, meses, nuevo mes.
