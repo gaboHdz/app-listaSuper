@@ -175,7 +175,7 @@ var gesture_controller = __webpack_require__(5);
 var dom_controller = __webpack_require__(8);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item.ngfactory.js + 1 modules
-var item_ngfactory = __webpack_require__(121);
+var item_ngfactory = __webpack_require__(122);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item.js
 var item = __webpack_require__(15);
@@ -187,7 +187,7 @@ var util_form = __webpack_require__(12);
 var item_reorder = __webpack_require__(37);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/list/list-header.js
-var list_header = __webpack_require__(74);
+var list_header = __webpack_require__(75);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-content.js
 var item_content = __webpack_require__(53);

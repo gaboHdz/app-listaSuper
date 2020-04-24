@@ -1,6 +1,6 @@
 webpackJsonp([3],{
 
-/***/ 231:
+/***/ 232:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -135,13 +135,13 @@ var button_ngfactory = __webpack_require__(41);
 var button_button = __webpack_require__(19);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/menu/menu-toggle.js
-var menu_toggle = __webpack_require__(120);
+var menu_toggle = __webpack_require__(121);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/menu-controller.js
 var menu_controller = __webpack_require__(21);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-item.js
-var toolbar_item = __webpack_require__(122);
+var toolbar_item = __webpack_require__(123);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar.js
 var toolbar = __webpack_require__(32);
@@ -174,10 +174,10 @@ var keyboard = __webpack_require__(23);
 var card = __webpack_require__(114);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/card/card-header.js
-var card_header = __webpack_require__(124);
+var card_header = __webpack_require__(125);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/card/card-content.js
-var card_content = __webpack_require__(123);
+var card_content = __webpack_require__(124);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/nav-params.js
 var nav_params = __webpack_require__(9);

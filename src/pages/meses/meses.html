@@ -25,9 +25,19 @@
 
   <ion-card>
     <ion-list *ngIf="meses !=null">
-      <button *ngFor="let m of meses" ion-item (click)='verMes(m)'>
-        {{m.mes[0].nombre}}
-      </button>
+      <ion-item-sliding *ngFor="let m of meses">
+        <ion-item>
+          <button ion-item (click)='verMes(m)'>
+            {{m.mes[0].nombre}}
+          </button>
+        </ion-item>
+        <ion-item-options side="right">
+          <button ion-button color="danger">
+            <ion-icon name="delete"></ion-icon>
+            borrar
+          </button>
+        </ion-item-options>
+      </ion-item-sliding>
     </ion-list>
 
     <ion-list *ngIf="meses ==null">

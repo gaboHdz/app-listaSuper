@@ -6941,7 +6941,7 @@ var SystemJsNgModuleLoader = /** @class */ (function () {
         if (exportName === undefined) {
             exportName = 'default';
         }
-        return __webpack_require__(134)(module)
+        return __webpack_require__(135)(module)
             .then(function (module) { return module[exportName]; })
             .then(function (type) { return checkNotEmpty(type, module, exportName); })
             .then(function (type) { return _this._compiler.compileModuleAsync(type); });
@@ -6961,7 +6961,7 @@ var SystemJsNgModuleLoader = /** @class */ (function () {
             exportName = 'default';
             factoryClassSuffix = '';
         }
-        return __webpack_require__(134)(this._config.factoryPathPrefix + module + this._config.factoryPathSuffix)
+        return __webpack_require__(135)(this._config.factoryPathPrefix + module + this._config.factoryPathSuffix)
             .then(function (module) { return module[exportName + factoryClassSuffix]; })
             .then(function (factory) { return checkNotEmpty(factory, module, exportName); });
     };
@@ -19710,7 +19710,7 @@ function transition$$1(stateChangeExpr, steps) {
 
 //# sourceMappingURL=core.js.map
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(125)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(126)))
 
 /***/ }),
 /* 1 */
@@ -30153,7 +30153,7 @@ var IonicFormInput = (function () {
 
 var root_1 = __webpack_require__(38);
 var toSubscriber_1 = __webpack_require__(196);
-var observable_1 = __webpack_require__(130);
+var observable_1 = __webpack_require__(131);
 var pipe_1 = __webpack_require__(198);
 /**
  * A representation of any set of values over any amount of time. This is the most basic building block
@@ -41461,7 +41461,7 @@ var Button = (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__platform_keyboard__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__navigation_nav_controller__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__platform_platform__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__util_scroll_view__ = __webpack_require__(142);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__util_scroll_view__ = __webpack_require__(143);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__navigation_view_controller__ = __webpack_require__(4);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
@@ -43226,7 +43226,7 @@ var TABS = 'tabs';
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UIEventManager; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pointer_events__ = __webpack_require__(136);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pointer_events__ = __webpack_require__(137);
 
 /**
  * @hidden
@@ -43358,7 +43358,7 @@ var TransitionController = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_ion__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__debouncer__ = __webpack_require__(141);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__debouncer__ = __webpack_require__(142);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -49934,10 +49934,10 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var isFunction_1 = __webpack_require__(75);
+var isFunction_1 = __webpack_require__(76);
 var Subscription_1 = __webpack_require__(39);
-var Observer_1 = __webpack_require__(129);
-var rxSubscriber_1 = __webpack_require__(77);
+var Observer_1 = __webpack_require__(130);
+var rxSubscriber_1 = __webpack_require__(78);
 /**
  * Implements the {@link Observer} interface and extends the
  * {@link Subscription} class. While the {@link Observer} is the public API for
@@ -50384,7 +50384,7 @@ var dom_controller = __webpack_require__(8);
 var util = __webpack_require__(2);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-reorder-util.js
-var item_reorder_util = __webpack_require__(143);
+var item_reorder_util = __webpack_require__(144);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/util/dom.js
 var dom = __webpack_require__(11);
@@ -50879,7 +50879,7 @@ exports.root = _root;
     }
 })();
 //# sourceMappingURL=root.js.map
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(125)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(126)))
 
 /***/ }),
 /* 39 */
@@ -50887,11 +50887,11 @@ exports.root = _root;
 
 "use strict";
 
-var isArray_1 = __webpack_require__(126);
-var isObject_1 = __webpack_require__(127);
-var isFunction_1 = __webpack_require__(75);
-var tryCatch_1 = __webpack_require__(128);
-var errorObject_1 = __webpack_require__(76);
+var isArray_1 = __webpack_require__(127);
+var isObject_1 = __webpack_require__(128);
+var isFunction_1 = __webpack_require__(76);
+var tryCatch_1 = __webpack_require__(129);
+var errorObject_1 = __webpack_require__(77);
 var UnsubscriptionError_1 = __webpack_require__(197);
 /**
  * Represents a disposable resource, such as the execution of an Observable. A
@@ -51800,7 +51800,7 @@ var Subscriber_1 = __webpack_require__(34);
 var Subscription_1 = __webpack_require__(39);
 var ObjectUnsubscribedError_1 = __webpack_require__(214);
 var SubjectSubscription_1 = __webpack_require__(215);
-var rxSubscriber_1 = __webpack_require__(77);
+var rxSubscriber_1 = __webpack_require__(78);
 /**
  * @class SubjectSubscriber<T>
  */
@@ -51969,7 +51969,7 @@ exports.AnonymousSubject = AnonymousSubject;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_config__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ion__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__overlay_portal__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__overlay_portal__ = __webpack_require__(81);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__platform_platform__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_constants__ = __webpack_require__(47);
 var __extends = (this && this.__extends) || (function () {
@@ -53336,7 +53336,7 @@ var Nav = (function (_super) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RadioGroup; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list_list_header__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list_list_header__ = __webpack_require__(75);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__util_util__ = __webpack_require__(2);
 
 
@@ -53969,7 +53969,7 @@ var nav_params = __webpack_require__(9);
 var gesture_controller = __webpack_require__(5);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/gestures/slide-edge-gesture.js
-var slide_edge_gesture = __webpack_require__(81);
+var slide_edge_gesture = __webpack_require__(82);
 
 // CONCATENATED MODULE: ./node_modules/ionic-angular/navigation/swipe-back.js
 var __extends = (this && this.__extends) || (function () {
@@ -55805,7 +55805,7 @@ var alertIds = -1;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_app__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_config__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__picker__ = __webpack_require__(146);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__picker__ = __webpack_require__(147);
 
 
 
@@ -56152,7 +56152,7 @@ var FabButton = (function (_super) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Reorder; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__item_reorder_util__ = __webpack_require__(143);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__item_reorder_util__ = __webpack_require__(144);
 
 
 /**
@@ -56339,7 +56339,7 @@ var util = __webpack_require__(2);
 var keyboard = __webpack_require__(23);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/gestures/slide-edge-gesture.js
-var slide_edge_gesture = __webpack_require__(81);
+var slide_edge_gesture = __webpack_require__(82);
 
 // CONCATENATED MODULE: ./node_modules/ionic-angular/components/menu/menu-gestures.js
 var __extends = (this && this.__extends) || (function () {
@@ -58581,6 +58581,79 @@ var Header = (function (_super) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ItemOptions; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__platform_platform__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util_util__ = __webpack_require__(2);
+
+
+
+/**
+ * @name ItemOptions
+ * @description
+ * The option buttons for an `ion-item-sliding`. These buttons can be placed either on the left or right side.
+ * You can combine the `(ionSwipe)` event plus the `expandable` directive to create a full swipe action for the item.
+ *
+ * @usage
+ *
+ * ```html
+ * <ion-item-sliding>
+ *   <ion-item>
+ *     Item 1
+ *   </ion-item>
+ *   <ion-item-options side="right" (ionSwipe)="saveItem(item)">
+ *     <button ion-button expandable (click)="saveItem(item)">
+ *       <ion-icon name="star"></ion-icon>
+ *     </button>
+ *   </ion-item-options>
+ * </ion-item-sliding>
+ *```
+ */
+var ItemOptions = (function () {
+    function ItemOptions(_elementRef, _plt) {
+        this._elementRef = _elementRef;
+        this._plt = _plt;
+        /**
+         * @output {event} Emitted when the item has been fully swiped.
+         */
+        this.ionSwipe = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["r" /* EventEmitter */]();
+    }
+    /**
+     * @hidden
+     */
+    ItemOptions.prototype.isRightSide = function () {
+        return Object(__WEBPACK_IMPORTED_MODULE_2__util_util__["m" /* isRightSide */])(this.side, this._plt.isRTL, true);
+    };
+    /**
+     * @hidden
+     */
+    ItemOptions.prototype.width = function () {
+        return this._elementRef.nativeElement.offsetWidth;
+    };
+    ItemOptions.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Directive */], args: [{
+                    selector: 'ion-item-options',
+                },] },
+    ];
+    /** @nocollapse */
+    ItemOptions.ctorParameters = function () { return [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* ElementRef */], },
+        { type: __WEBPACK_IMPORTED_MODULE_1__platform_platform__["a" /* Platform */], },
+    ]; };
+    ItemOptions.propDecorators = {
+        'side': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Input */] },],
+        'ionSwipe': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* Output */] },],
+    };
+    return ItemOptions;
+}());
+
+//# sourceMappingURL=item-options.js.map
+
+/***/ }),
+/* 75 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListHeader; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_config__ = __webpack_require__(1);
@@ -58637,7 +58710,7 @@ var ListHeader = (function (_super) {
 //# sourceMappingURL=list-header.js.map
 
 /***/ }),
-/* 75 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58649,7 +58722,7 @@ exports.isFunction = isFunction;
 //# sourceMappingURL=isFunction.js.map
 
 /***/ }),
-/* 76 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58659,7 +58732,7 @@ exports.errorObject = { e: {} };
 //# sourceMappingURL=errorObject.js.map
 
 /***/ }),
-/* 77 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58675,7 +58748,7 @@ exports.$$rxSubscriber = exports.rxSubscriber;
 //# sourceMappingURL=rxSubscriber.js.map
 
 /***/ }),
-/* 78 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58683,11 +58756,11 @@ exports.$$rxSubscriber = exports.rxSubscriber;
 var root_1 = __webpack_require__(38);
 var isArrayLike_1 = __webpack_require__(205);
 var isPromise_1 = __webpack_require__(206);
-var isObject_1 = __webpack_require__(127);
+var isObject_1 = __webpack_require__(128);
 var Observable_1 = __webpack_require__(13);
 var iterator_1 = __webpack_require__(207);
 var InnerSubscriber_1 = __webpack_require__(208);
-var observable_1 = __webpack_require__(130);
+var observable_1 = __webpack_require__(131);
 function subscribeToResult(outerSubscriber, result, outerValue, outerIndex) {
     var destination = new InnerSubscriber_1.InnerSubscriber(outerSubscriber, outerValue, outerIndex);
     if (destination.closed) {
@@ -58760,7 +58833,7 @@ exports.subscribeToResult = subscribeToResult;
 //# sourceMappingURL=subscribeToResult.js.map
 
 /***/ }),
-/* 79 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58796,7 +58869,7 @@ exports.OuterSubscriber = OuterSubscriber;
 //# sourceMappingURL=OuterSubscriber.js.map
 
 /***/ }),
-/* 80 */
+/* 81 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -58900,12 +58973,12 @@ var OverlayPortal = (function (_super) {
 //# sourceMappingURL=overlay-portal.js.map
 
 /***/ }),
-/* 81 */
+/* 82 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SlideEdgeGesture; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__slide_gesture__ = __webpack_require__(135);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__slide_gesture__ = __webpack_require__(136);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util_util__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util_dom__ = __webpack_require__(11);
 var __extends = (this && this.__extends) || (function () {
@@ -58981,7 +59054,7 @@ var SlideEdgeGesture = (function (_super) {
 //# sourceMappingURL=slide-edge-gesture.js.map
 
 /***/ }),
-/* 82 */
+/* 83 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -59192,13 +59265,13 @@ var action_sheet_ActionSheet = (function (_super) {
 //# sourceMappingURL=action-sheet.js.map
 
 /***/ }),
-/* 83 */
+/* 84 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActionSheetController; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__action_sheet__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__action_sheet__ = __webpack_require__(83);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_config__ = __webpack_require__(1);
 
@@ -59381,7 +59454,7 @@ var ActionSheetController = (function () {
 //# sourceMappingURL=action-sheet-controller.js.map
 
 /***/ }),
-/* 84 */
+/* 85 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -59648,13 +59721,13 @@ var alert_Alert = (function (_super) {
 //# sourceMappingURL=alert.js.map
 
 /***/ }),
-/* 85 */
+/* 86 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AlertController; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__alert__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__alert__ = __webpack_require__(85);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_config__ = __webpack_require__(1);
 
@@ -59908,7 +59981,7 @@ var AlertController = (function () {
 //# sourceMappingURL=alert-controller.js.map
 
 /***/ }),
-/* 86 */
+/* 87 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -60019,7 +60092,7 @@ var FabList = (function () {
 //# sourceMappingURL=fab-list.js.map
 
 /***/ }),
-/* 87 */
+/* 88 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -60431,79 +60504,6 @@ var POSITION_BOTTOM = 'bottom';
 //# sourceMappingURL=infinite-scroll.js.map
 
 /***/ }),
-/* 88 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ItemOptions; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__platform_platform__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util_util__ = __webpack_require__(2);
-
-
-
-/**
- * @name ItemOptions
- * @description
- * The option buttons for an `ion-item-sliding`. These buttons can be placed either on the left or right side.
- * You can combine the `(ionSwipe)` event plus the `expandable` directive to create a full swipe action for the item.
- *
- * @usage
- *
- * ```html
- * <ion-item-sliding>
- *   <ion-item>
- *     Item 1
- *   </ion-item>
- *   <ion-item-options side="right" (ionSwipe)="saveItem(item)">
- *     <button ion-button expandable (click)="saveItem(item)">
- *       <ion-icon name="star"></ion-icon>
- *     </button>
- *   </ion-item-options>
- * </ion-item-sliding>
- *```
- */
-var ItemOptions = (function () {
-    function ItemOptions(_elementRef, _plt) {
-        this._elementRef = _elementRef;
-        this._plt = _plt;
-        /**
-         * @output {event} Emitted when the item has been fully swiped.
-         */
-        this.ionSwipe = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["r" /* EventEmitter */]();
-    }
-    /**
-     * @hidden
-     */
-    ItemOptions.prototype.isRightSide = function () {
-        return Object(__WEBPACK_IMPORTED_MODULE_2__util_util__["m" /* isRightSide */])(this.side, this._plt.isRTL, true);
-    };
-    /**
-     * @hidden
-     */
-    ItemOptions.prototype.width = function () {
-        return this._elementRef.nativeElement.offsetWidth;
-    };
-    ItemOptions.decorators = [
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Directive */], args: [{
-                    selector: 'ion-item-options',
-                },] },
-    ];
-    /** @nocollapse */
-    ItemOptions.ctorParameters = function () { return [
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* ElementRef */], },
-        { type: __WEBPACK_IMPORTED_MODULE_1__platform_platform__["a" /* Platform */], },
-    ]; };
-    ItemOptions.propDecorators = {
-        'side': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Input */] },],
-        'ionSwipe': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* Output */] },],
-    };
-    return ItemOptions;
-}());
-
-//# sourceMappingURL=item-options.js.map
-
-/***/ }),
 /* 89 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -60778,7 +60778,7 @@ function loadPrecompiledFactory(modulePath, ngModuleExport) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Events; });
 /* unused harmony export setupEvents */
 /* harmony export (immutable) */ __webpack_exports__["b"] = setupProvideEvents;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scroll_view__ = __webpack_require__(142);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scroll_view__ = __webpack_require__(143);
 
 /**
  * @name Events
@@ -61414,7 +61414,7 @@ var platform = __webpack_require__(3);
 var util_dom = __webpack_require__(11);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/gestures/pointer-events.js
-var pointer_events = __webpack_require__(136);
+var pointer_events = __webpack_require__(137);
 
 // CONCATENATED MODULE: ./node_modules/ionic-angular/tap-click/ripple.js
 
@@ -67785,7 +67785,7 @@ var slidesId = -1;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_takeUntil__ = __webpack_require__(150);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_takeUntil__ = __webpack_require__(151);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_takeUntil___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_takeUntil__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__config_config__ = __webpack_require__(1);
@@ -68672,19 +68672,19 @@ var app_root = __webpack_require__(46);
 var menu_controller = __webpack_require__(21);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/action-sheet/action-sheet.js + 1 modules
-var action_sheet = __webpack_require__(82);
+var action_sheet = __webpack_require__(83);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/action-sheet/action-sheet-controller.js
-var action_sheet_controller = __webpack_require__(83);
+var action_sheet_controller = __webpack_require__(84);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/action-sheet/action-sheet-component.js
 var action_sheet_component = __webpack_require__(57);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/alert/alert.js + 1 modules
-var alert_alert = __webpack_require__(84);
+var alert_alert = __webpack_require__(85);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/alert/alert-controller.js
-var alert_controller = __webpack_require__(85);
+var alert_controller = __webpack_require__(86);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/alert/alert-component.js
 var alert_component = __webpack_require__(58);
@@ -68693,13 +68693,13 @@ var alert_component = __webpack_require__(58);
 var app = __webpack_require__(7);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/avatar/avatar.js
-var avatar = __webpack_require__(137);
+var avatar = __webpack_require__(138);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/backdrop/backdrop.js
 var backdrop = __webpack_require__(22);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/badge/badge.js
-var badge = __webpack_require__(138);
+var badge = __webpack_require__(139);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/button/button.js
 var button_button = __webpack_require__(19);
@@ -68708,34 +68708,34 @@ var button_button = __webpack_require__(19);
 var card = __webpack_require__(114);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/card/card-content.js
-var card_content = __webpack_require__(123);
+var card_content = __webpack_require__(124);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/card/card-header.js
-var card_header = __webpack_require__(124);
+var card_header = __webpack_require__(125);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/card/card-title.js
-var card_title = __webpack_require__(139);
+var card_title = __webpack_require__(140);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/checkbox/checkbox.js
-var checkbox_checkbox = __webpack_require__(140);
+var checkbox_checkbox = __webpack_require__(141);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/chip/chip.js
-var chip = __webpack_require__(144);
+var chip = __webpack_require__(145);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/content/content.js
 var content = __webpack_require__(20);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/datetime/datetime.js + 1 modules
-var datetime = __webpack_require__(145);
+var datetime = __webpack_require__(146);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/fab/fab.js
 var fab = __webpack_require__(61);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/fab/fab-container.js
-var fab_container = __webpack_require__(147);
+var fab_container = __webpack_require__(148);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/fab/fab-list.js
-var fab_list = __webpack_require__(86);
+var fab_list = __webpack_require__(87);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/grid/col.js
 var col = __webpack_require__(116);
@@ -68753,13 +68753,13 @@ var ion = __webpack_require__(6);
 var icon = __webpack_require__(42);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/img/img.js
-var img = __webpack_require__(148);
+var img = __webpack_require__(149);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/infinite-scroll/infinite-scroll.js
-var infinite_scroll = __webpack_require__(87);
+var infinite_scroll = __webpack_require__(88);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/infinite-scroll/infinite-scroll-content.js
-var infinite_scroll_content = __webpack_require__(149);
+var infinite_scroll_content = __webpack_require__(150);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/input/input.js
 var input = __webpack_require__(119);
@@ -68771,19 +68771,19 @@ var item = __webpack_require__(15);
 var item_content = __webpack_require__(53);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-divider.js
-var item_divider = __webpack_require__(151);
+var item_divider = __webpack_require__(152);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-group.js
-var item_group = __webpack_require__(152);
+var item_group = __webpack_require__(153);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-options.js
-var item_options = __webpack_require__(88);
+var item_options = __webpack_require__(74);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-reorder.js + 1 modules
 var item_reorder = __webpack_require__(37);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-sliding.js
-var item_sliding = __webpack_require__(153);
+var item_sliding = __webpack_require__(120);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/reorder.js
 var reorder = __webpack_require__(62);
@@ -68795,7 +68795,7 @@ var label = __webpack_require__(44);
 var list = __webpack_require__(43);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/list/list-header.js
-var list_header = __webpack_require__(74);
+var list_header = __webpack_require__(75);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/loading/loading.js + 1 modules
 var loading = __webpack_require__(154);
@@ -68813,7 +68813,7 @@ var menu_menu = __webpack_require__(64);
 var menu_close = __webpack_require__(90);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/menu/menu-toggle.js
-var menu_toggle = __webpack_require__(120);
+var menu_toggle = __webpack_require__(121);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/animations/animation.js
 var animation = __webpack_require__(16);
@@ -69008,7 +69008,7 @@ var note = __webpack_require__(163);
 var option_option = __webpack_require__(100);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/picker/picker.js + 1 modules
-var picker = __webpack_require__(146);
+var picker = __webpack_require__(147);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/picker/picker-component.js
 var picker_component = __webpack_require__(60);
@@ -69119,7 +69119,7 @@ var toolbar_header = __webpack_require__(73);
 var toolbar = __webpack_require__(32);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-item.js
-var toolbar_item = __webpack_require__(122);
+var toolbar_item = __webpack_require__(123);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-title.js
 var toolbar_title = __webpack_require__(52);
@@ -71686,10 +71686,10 @@ var gesture_Gesture = (function () {
 
 //# sourceMappingURL=gesture.js.map
 // EXTERNAL MODULE: ./node_modules/ionic-angular/gestures/slide-edge-gesture.js
-var slide_edge_gesture = __webpack_require__(81);
+var slide_edge_gesture = __webpack_require__(82);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/gestures/slide-gesture.js
-var slide_gesture = __webpack_require__(135);
+var slide_gesture = __webpack_require__(136);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/gestures/gesture-controller.js
 var gesture_controller = __webpack_require__(5);
@@ -72260,51 +72260,51 @@ var Card = (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__transitions_transition_controller__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__navigation_url_serializer__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components_action_sheet_action_sheet_component__ = __webpack_require__(57);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_action_sheet_action_sheet_controller__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_action_sheet_action_sheet_controller__ = __webpack_require__(84);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__components_alert_alert_component__ = __webpack_require__(58);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__components_alert_alert_controller__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__components_alert_alert_controller__ = __webpack_require__(86);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__components_app_click_block__ = __webpack_require__(159);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__components_app_overlay_portal__ = __webpack_require__(80);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__components_avatar_avatar__ = __webpack_require__(137);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__components_app_overlay_portal__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__components_avatar_avatar__ = __webpack_require__(138);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__components_backdrop_backdrop__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__components_badge_badge__ = __webpack_require__(138);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__components_badge_badge__ = __webpack_require__(139);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__components_button_button__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__components_card_card__ = __webpack_require__(114);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__components_card_card_content__ = __webpack_require__(123);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__components_card_card_header__ = __webpack_require__(124);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__components_card_card_title__ = __webpack_require__(139);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__components_checkbox_checkbox__ = __webpack_require__(140);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__components_chip_chip__ = __webpack_require__(144);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__components_card_card_content__ = __webpack_require__(124);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__components_card_card_header__ = __webpack_require__(125);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__components_card_card_title__ = __webpack_require__(140);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__components_checkbox_checkbox__ = __webpack_require__(141);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__components_chip_chip__ = __webpack_require__(145);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__components_content_content__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__components_datetime_datetime__ = __webpack_require__(145);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__components_datetime_datetime__ = __webpack_require__(146);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__components_fab_fab__ = __webpack_require__(61);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__components_fab_fab_container__ = __webpack_require__(147);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__components_fab_fab_list__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__components_fab_fab_container__ = __webpack_require__(148);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__components_fab_fab_list__ = __webpack_require__(87);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__components_grid_col__ = __webpack_require__(116);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__components_grid_grid__ = __webpack_require__(117);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__components_grid_row__ = __webpack_require__(118);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__components_icon_icon__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__components_img_img__ = __webpack_require__(148);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__components_infinite_scroll_infinite_scroll__ = __webpack_require__(87);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__components_infinite_scroll_infinite_scroll_content__ = __webpack_require__(149);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__components_img_img__ = __webpack_require__(149);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__components_infinite_scroll_infinite_scroll__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__components_infinite_scroll_infinite_scroll_content__ = __webpack_require__(150);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__components_input_input__ = __webpack_require__(119);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__components_item_item__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__components_item_item_content__ = __webpack_require__(53);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__components_item_item_divider__ = __webpack_require__(151);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__components_item_item_group__ = __webpack_require__(152);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_56__components_item_item_options__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__components_item_item_divider__ = __webpack_require__(152);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__components_item_item_group__ = __webpack_require__(153);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_56__components_item_item_options__ = __webpack_require__(74);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_57__components_item_item_reorder__ = __webpack_require__(37);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_58__components_item_item_sliding__ = __webpack_require__(153);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_58__components_item_item_sliding__ = __webpack_require__(120);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_59__components_item_reorder__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_60__components_label_label__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_61__components_list_list__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_62__components_list_list_header__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_62__components_list_list_header__ = __webpack_require__(75);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_63__components_loading_loading_component__ = __webpack_require__(63);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_64__components_loading_loading_controller__ = __webpack_require__(89);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_65__components_menu_menu__ = __webpack_require__(64);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_66__components_menu_menu_close__ = __webpack_require__(90);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_67__components_app_menu_controller__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_68__components_menu_menu_toggle__ = __webpack_require__(120);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_68__components_menu_menu_toggle__ = __webpack_require__(121);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_69__components_modal_modal_component__ = __webpack_require__(65);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_70__components_modal_modal_controller__ = __webpack_require__(97);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_71__components_nav_nav__ = __webpack_require__(50);
@@ -72348,7 +72348,7 @@ var Card = (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_109__components_toolbar_toolbar_footer__ = __webpack_require__(179);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_110__components_toolbar_toolbar_header__ = __webpack_require__(73);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_111__components_toolbar_toolbar__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_112__components_toolbar_toolbar_item__ = __webpack_require__(122);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_112__components_toolbar_toolbar_item__ = __webpack_require__(123);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_113__components_toolbar_toolbar_title__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_114__components_toolbar_navbar__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_115__components_typography_typography__ = __webpack_require__(180);
@@ -73537,7 +73537,7 @@ var Row = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Subject__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Subject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_takeUntil__ = __webpack_require__(150);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_takeUntil__ = __webpack_require__(151);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_takeUntil___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_takeUntil__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_app__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__config_config__ = __webpack_require__(1);
@@ -74336,6 +74336,429 @@ function removeClone(plt, srcComponentEle, srcNativeInputEle) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ItemSliding; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util_util__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__item__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__list_list__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__platform_platform__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__item_options__ = __webpack_require__(74);
+
+
+
+
+
+
+var SWIPE_MARGIN = 30;
+var ELASTIC_FACTOR = 0.55;
+var ITEM_SIDE_FLAG_NONE = 0;
+var ITEM_SIDE_FLAG_LEFT = 1 << 0;
+var ITEM_SIDE_FLAG_RIGHT = 1 << 1;
+var ITEM_SIDE_FLAG_BOTH = ITEM_SIDE_FLAG_LEFT | ITEM_SIDE_FLAG_RIGHT;
+/**
+ * @name ItemSliding
+ * @description
+ * A sliding item is a list item that can be swiped to reveal buttons. It requires
+ * an [Item](../Item) component as a child and a [List](../../list/List) component as
+ * a parent. All buttons to reveal can be placed in the `<ion-item-options>` element.
+ *
+ * @usage
+ * ```html
+ * <ion-list>
+ *   <ion-item-sliding #item>
+ *     <ion-item>
+ *       Item
+ *     </ion-item>
+ *     <ion-item-options side="left">
+ *       <button ion-button (click)="favorite(item)">Favorite</button>
+ *       <button ion-button color="danger" (click)="share(item)">Share</button>
+ *     </ion-item-options>
+ *
+ *     <ion-item-options side="right">
+ *       <button ion-button (click)="unread(item)">Unread</button>
+ *     </ion-item-options>
+ *   </ion-item-sliding>
+ * </ion-list>
+ * ```
+ *
+ * ### Swipe Direction
+ * By default, the buttons are revealed when the sliding item is swiped from right to left,
+ * so the buttons are placed in the right side. But it's also possible to reveal them
+ * in the right side (sliding from left to right) by setting the `side` attribute
+ * on the `ion-item-options` element. Up to 2 `ion-item-options` can used at the same time
+ * in order to reveal two different sets of buttons depending the swipping direction.
+ *
+ * ```html
+ * <ion-item-options side="right">
+ *   <button ion-button (click)="archive(item)">
+ *     <ion-icon name="archive"></ion-icon>
+ *     Archive
+ *   </button>
+ * </ion-item-options>
+ *
+ * <ion-item-options side="left">
+ *   <button ion-button (click)="archive(item)">
+ *     <ion-icon name="archive"></ion-icon>
+ *     Archive
+ *   </button>
+ * </ion-item-options>
+ * ```
+ *
+ * ### Listening for events (ionDrag) and (ionSwipe)
+ * It's possible to know the current relative position of the sliding item by subscribing
+ * to the (ionDrag)` event.
+ *
+ * ```html
+ * <ion-item-sliding (ionDrag)="logDrag($event)">
+ *   <ion-item>Item</ion-item>
+ *   <ion-item-options>
+ *     <button ion-button>Favorite</button>
+ *   </ion-item-options>
+ * </ion-item-sliding>
+ * ```
+ *
+ * ### Button Layout
+ * If an icon is placed with text in the option button, by default it will
+ * display the icon on top of the text. This can be changed to display the icon
+ * to the left of the text by setting `icon-start` as an attribute on the
+ * `<ion-item-options>` element.
+ *
+ * ```html
+ * <ion-item-options icon-start>
+ *    <button ion-button (click)="archive(item)">
+ *      <ion-icon name="archive"></ion-icon>
+ *      Archive
+ *    </button>
+ *  </ion-item-options>
+ *
+ * ```
+ *
+ * ### Expandable Options
+ *
+ * Options can be expanded to take up the full width of the item if you swipe past
+ * a certain point. This can be combined with the `ionSwipe` event to call methods
+ * on the class.
+ *
+ * ```html
+ *
+ * <ion-item-sliding>
+ *   <ion-item>Item</ion-item>
+ *   <ion-item-options (ionSwipe)="delete(item)">
+ *     <button ion-button expandable (click)="delete(item)">Delete</button>
+ *   </ion-item-options>
+ * </ion-item-sliding>
+ * ```
+ *
+ * We can call `delete` by either clicking the button, or by doing a full swipe on the item.
+ *
+ * @demo /docs/demos/src/item-sliding/
+ * @see {@link /docs/components#lists List Component Docs}
+ * @see {@link ../Item Item API Docs}
+ * @see {@link ../../list/List List API Docs}
+ */
+var ItemSliding = (function () {
+    function ItemSliding(list, _plt, _renderer, _elementRef, _zone) {
+        this._plt = _plt;
+        this._renderer = _renderer;
+        this._elementRef = _elementRef;
+        this._zone = _zone;
+        this._openAmount = 0;
+        this._startX = 0;
+        this._optsWidthRightSide = 0;
+        this._optsWidthLeftSide = 0;
+        this._tmr = null;
+        this._optsDirty = true;
+        this._state = 2 /* Disabled */;
+        /**
+         * @output {event} Emitted when the sliding position changes.
+         * It reports the relative position.
+         *
+         * ```ts
+         * ondrag(item) {
+         *   let percent = item.getSlidingPercent();
+         *   if (percent > 0) {
+         *     // positive
+         *     console.log('right side');
+         *   } else {
+         *     // negative
+         *     console.log('left side');
+         *   }
+         *   if (Math.abs(percent) > 1) {
+         *     console.log('overscroll');
+         *   }
+         * }
+         * ```
+         *
+         */
+        this.ionDrag = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["r" /* EventEmitter */]();
+        list && list.containsSlidingItem(true);
+        _elementRef.nativeElement.$ionComponent = this;
+        this.setElementClass('item-wrapper', true);
+    }
+    Object.defineProperty(ItemSliding.prototype, "_itemOptions", {
+        set: function (itemOptions) {
+            var sides = 0;
+            // Reset left and right options in case they were removed
+            this._leftOptions = this._rightOptions = null;
+            for (var _i = 0, _a = itemOptions.toArray(); _i < _a.length; _i++) {
+                var item = _a[_i];
+                if (item.isRightSide()) {
+                    this._rightOptions = item;
+                    sides |= ITEM_SIDE_FLAG_RIGHT;
+                }
+                else {
+                    this._leftOptions = item;
+                    sides |= ITEM_SIDE_FLAG_LEFT;
+                }
+            }
+            this._optsDirty = true;
+            this._sides = sides;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * @hidden
+     */
+    ItemSliding.prototype.getOpenAmount = function () {
+        return this._openAmount;
+    };
+    /**
+     * @hidden
+     */
+    ItemSliding.prototype.getSlidingPercent = function () {
+        var openAmount = this._openAmount;
+        if (openAmount > 0) {
+            return openAmount / this._optsWidthRightSide;
+        }
+        else if (openAmount < 0) {
+            return openAmount / this._optsWidthLeftSide;
+        }
+        else {
+            return 0;
+        }
+    };
+    /**
+     * @hidden
+     */
+    ItemSliding.prototype.startSliding = function (startX) {
+        if (this._tmr) {
+            this._plt.cancelTimeout(this._tmr);
+            this._tmr = null;
+        }
+        if (this._openAmount === 0) {
+            this._optsDirty = true;
+            this._setState(4 /* Enabled */);
+        }
+        this._startX = startX + this._openAmount;
+        this.item.setElementStyle(this._plt.Css.transition, 'none');
+    };
+    /**
+     * @hidden
+     */
+    ItemSliding.prototype.moveSliding = function (x) {
+        if (this._optsDirty) {
+            this.calculateOptsWidth();
+            return;
+        }
+        var openAmount = (this._startX - x);
+        switch (this._sides) {
+            case ITEM_SIDE_FLAG_RIGHT:
+                openAmount = Math.max(0, openAmount);
+                break;
+            case ITEM_SIDE_FLAG_LEFT:
+                openAmount = Math.min(0, openAmount);
+                break;
+            case ITEM_SIDE_FLAG_BOTH: break;
+            case ITEM_SIDE_FLAG_NONE: return;
+            default:
+                (void 0) /* assert */;
+                break;
+        }
+        if (openAmount > this._optsWidthRightSide) {
+            var optsWidth = this._optsWidthRightSide;
+            openAmount = optsWidth + (openAmount - optsWidth) * ELASTIC_FACTOR;
+        }
+        else if (openAmount < -this._optsWidthLeftSide) {
+            var optsWidth = -this._optsWidthLeftSide;
+            openAmount = optsWidth + (openAmount - optsWidth) * ELASTIC_FACTOR;
+        }
+        this._setOpenAmount(openAmount, false);
+        return openAmount;
+    };
+    /**
+     * @hidden
+     */
+    ItemSliding.prototype.endSliding = function (velocity) {
+        var restingPoint = (this._openAmount > 0)
+            ? this._optsWidthRightSide
+            : -this._optsWidthLeftSide;
+        // Check if the drag didn't clear the buttons mid-point
+        // and we aren't moving fast enough to swipe open
+        var isResetDirection = (this._openAmount > 0) === !(velocity < 0);
+        var isMovingFast = Math.abs(velocity) > 0.3;
+        var isOnCloseZone = Math.abs(this._openAmount) < Math.abs(restingPoint / 2);
+        if (Object(__WEBPACK_IMPORTED_MODULE_1__util_util__["t" /* swipeShouldReset */])(isResetDirection, isMovingFast, isOnCloseZone)) {
+            restingPoint = 0;
+        }
+        this.fireSwipeEvent();
+        this._setOpenAmount(restingPoint, true);
+        return restingPoint;
+    };
+    /**
+     * @hidden
+     */
+    ItemSliding.prototype.fireSwipeEvent = function () {
+        var _this = this;
+        if (this._state & 32 /* SwipeRight */) {
+            this._zone.run(function () { return _this._rightOptions.ionSwipe.emit(_this); });
+        }
+        else if (this._state & 64 /* SwipeLeft */) {
+            this._zone.run(function () { return _this._leftOptions.ionSwipe.emit(_this); });
+        }
+    };
+    /**
+     * @hidden
+     */
+    ItemSliding.prototype.calculateOptsWidth = function () {
+        if (!this._optsDirty) {
+            return;
+        }
+        this._optsWidthRightSide = 0;
+        if (this._rightOptions) {
+            this._optsWidthRightSide = this._rightOptions.width();
+            (void 0) /* assert */;
+        }
+        this._optsWidthLeftSide = 0;
+        if (this._leftOptions) {
+            this._optsWidthLeftSide = this._leftOptions.width();
+            (void 0) /* assert */;
+        }
+        this._optsDirty = false;
+    };
+    ItemSliding.prototype._setOpenAmount = function (openAmount, isFinal) {
+        var _this = this;
+        var platform = this._plt;
+        if (this._tmr) {
+            platform.cancelTimeout(this._tmr);
+            this._tmr = null;
+        }
+        this._openAmount = openAmount;
+        if (isFinal) {
+            this.item.setElementStyle(platform.Css.transition, '');
+        }
+        if (openAmount > 0) {
+            var state = (openAmount >= (this._optsWidthRightSide + SWIPE_MARGIN))
+                ? 8 /* Right */ | 32 /* SwipeRight */
+                : 8 /* Right */;
+            this._setState(state);
+        }
+        else if (openAmount < 0) {
+            var state_1 = (openAmount <= (-this._optsWidthLeftSide - SWIPE_MARGIN))
+                ? 16 /* Left */ | 64 /* SwipeLeft */
+                : 16 /* Left */;
+            this._setState(state_1);
+        }
+        else {
+            (void 0) /* assert */;
+            this._tmr = platform.timeout(function () {
+                _this._setState(2 /* Disabled */);
+                _this._tmr = null;
+            }, 600);
+            this.item.setElementStyle(platform.Css.transform, '');
+            return;
+        }
+        this.item.setElementStyle(platform.Css.transform, "translate3d(" + -openAmount + "px,0,0)");
+        var ionDrag = this.ionDrag;
+        if (ionDrag.observers.length > 0) {
+            ionDrag.emit(this);
+        }
+    };
+    ItemSliding.prototype._setState = function (state) {
+        if (state === this._state) {
+            return;
+        }
+        this.setElementClass('active-slide', (state !== 2 /* Disabled */));
+        this.setElementClass('active-options-right', !!(state & 8 /* Right */));
+        this.setElementClass('active-options-left', !!(state & 16 /* Left */));
+        this.setElementClass('active-swipe-right', !!(state & 32 /* SwipeRight */));
+        this.setElementClass('active-swipe-left', !!(state & 64 /* SwipeLeft */));
+        this._state = state;
+    };
+    /**
+     * Close the sliding item. Items can also be closed from the [List](../../list/List).
+     *
+     * The sliding item can be closed by grabbing a reference to `ItemSliding`. In the
+     * below example, the template reference variable `slidingItem` is placed on the element
+     * and passed to the `share` method.
+     *
+     * ```html
+     * <ion-list>
+     *   <ion-item-sliding #slidingItem>
+     *     <ion-item>
+     *       Item
+     *     </ion-item>
+     *     <ion-item-options>
+     *       <button ion-button (click)="share(slidingItem)">Share</button>
+     *     </ion-item-options>
+     *   </ion-item-sliding>
+     * </ion-list>
+     * ```
+     *
+     * ```ts
+     * import { Component } from '@angular/core';
+     * import { ItemSliding } from 'ionic-angular';
+     *
+     * @Component({...})
+     * export class MyClass {
+     *   constructor() { }
+     *
+     *   share(slidingItem: ItemSliding) {
+     *     slidingItem.close();
+     *   }
+     * }
+     * ```
+     */
+    ItemSliding.prototype.close = function () {
+        this._setOpenAmount(0, true);
+    };
+    /**
+     * @hidden
+     */
+    ItemSliding.prototype.setElementClass = function (cssClass, shouldAdd) {
+        this._renderer.setElementClass(this._elementRef.nativeElement, cssClass, shouldAdd);
+    };
+    ItemSliding.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* Component */], args: [{
+                    selector: 'ion-item-sliding',
+                    template: "\n    <ng-content select=\"ion-item,[ion-item]\"></ng-content>\n    <ng-content select=\"ion-item-options\"></ng-content>\n  ",
+                    changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["h" /* ChangeDetectionStrategy */].OnPush,
+                    encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_1" /* ViewEncapsulation */].None
+                },] },
+    ];
+    /** @nocollapse */
+    ItemSliding.ctorParameters = function () { return [
+        { type: __WEBPACK_IMPORTED_MODULE_3__list_list__["a" /* List */], decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["H" /* Optional */] },] },
+        { type: __WEBPACK_IMPORTED_MODULE_4__platform_platform__["a" /* Platform */], },
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Renderer */], },
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* ElementRef */], },
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* NgZone */], },
+    ]; };
+    ItemSliding.propDecorators = {
+        'item': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* ContentChild */], args: [__WEBPACK_IMPORTED_MODULE_2__item__["a" /* Item */],] },],
+        'ionDrag': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* Output */] },],
+        '_itemOptions': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* ContentChildren */], args: [Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* forwardRef */])(function () { return __WEBPACK_IMPORTED_MODULE_5__item_options__["a" /* ItemOptions */]; }),] },],
+    };
+    return ItemSliding;
+}());
+
+//# sourceMappingURL=item-sliding.js.map
+
+/***/ }),
+/* 121 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MenuToggle; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__button_button__ = __webpack_require__(19);
@@ -74497,7 +74920,7 @@ var MenuToggle = (function () {
 //# sourceMappingURL=menu-toggle.js.map
 
 /***/ }),
-/* 121 */
+/* 122 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -74586,7 +75009,7 @@ var ItemNgFactory = core["_13" /* ɵccf */]("ion-list-header,ion-item,[ion-item]
 //# sourceMappingURL=item.ngfactory.js.map
 
 /***/ }),
-/* 122 */
+/* 123 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -74656,7 +75079,7 @@ var ToolbarItem = (function (_super) {
 //# sourceMappingURL=toolbar-item.js.map
 
 /***/ }),
-/* 123 */
+/* 124 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -74702,7 +75125,7 @@ var CardContent = (function (_super) {
 //# sourceMappingURL=card-content.js.map
 
 /***/ }),
-/* 124 */
+/* 125 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -74748,7 +75171,7 @@ var CardHeader = (function (_super) {
 //# sourceMappingURL=card-header.js.map
 
 /***/ }),
-/* 125 */
+/* 126 */
 /***/ (function(module, exports) {
 
 var g;
@@ -74775,7 +75198,7 @@ module.exports = g;
 
 
 /***/ }),
-/* 126 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -74784,7 +75207,7 @@ exports.isArray = Array.isArray || (function (x) { return x && typeof x.length =
 //# sourceMappingURL=isArray.js.map
 
 /***/ }),
-/* 127 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -74796,12 +75219,12 @@ exports.isObject = isObject;
 //# sourceMappingURL=isObject.js.map
 
 /***/ }),
-/* 128 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var errorObject_1 = __webpack_require__(76);
+var errorObject_1 = __webpack_require__(77);
 var tryCatchTarget;
 function tryCatcher() {
     try {
@@ -74821,7 +75244,7 @@ exports.tryCatch = tryCatch;
 //# sourceMappingURL=tryCatch.js.map
 
 /***/ }),
-/* 129 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -74835,7 +75258,7 @@ exports.empty = {
 //# sourceMappingURL=Observer.js.map
 
 /***/ }),
-/* 130 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -74867,7 +75290,7 @@ exports.$$observable = exports.observable;
 //# sourceMappingURL=observable.js.map
 
 /***/ }),
-/* 131 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -74954,7 +75377,7 @@ exports.EmptyObservable = EmptyObservable;
 //# sourceMappingURL=EmptyObservable.js.map
 
 /***/ }),
-/* 132 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -74966,7 +75389,7 @@ exports.isScheduler = isScheduler;
 //# sourceMappingURL=isScheduler.js.map
 
 /***/ }),
-/* 133 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75057,8 +75480,8 @@ var RefCountSubscriber = (function (_super) {
 //# sourceMappingURL=refCount.js.map
 
 /***/ }),
-/* 134 */,
-/* 135 */
+/* 135 */,
+/* 136 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -75159,7 +75582,7 @@ var SlideGesture = (function (_super) {
 //# sourceMappingURL=slide-gesture.js.map
 
 /***/ }),
-/* 136 */
+/* 137 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -75266,7 +75689,7 @@ var POINTER_EVENT_TYPE_TOUCH = 2;
 //# sourceMappingURL=pointer-events.js.map
 
 /***/ }),
-/* 137 */
+/* 138 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -75297,7 +75720,7 @@ var Avatar = (function () {
 //# sourceMappingURL=avatar.js.map
 
 /***/ }),
-/* 138 */
+/* 139 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -75347,7 +75770,7 @@ var Badge = (function (_super) {
 //# sourceMappingURL=badge.js.map
 
 /***/ }),
-/* 139 */
+/* 140 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -75393,7 +75816,7 @@ var CardTitle = (function (_super) {
 //# sourceMappingURL=card-title.js.map
 
 /***/ }),
-/* 140 */
+/* 141 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -75567,7 +75990,7 @@ var Checkbox = (function (_super) {
 //# sourceMappingURL=checkbox.js.map
 
 /***/ }),
-/* 141 */
+/* 142 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -75602,7 +76025,7 @@ var TimeoutDebouncer = (function () {
 //# sourceMappingURL=debouncer.js.map
 
 /***/ }),
-/* 142 */
+/* 143 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -76057,7 +76480,7 @@ var EVENT_OPTS = {
 //# sourceMappingURL=scroll-view.js.map
 
 /***/ }),
-/* 143 */
+/* 144 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -76096,7 +76519,7 @@ function findReorderItem(node, listNode) {
 //# sourceMappingURL=item-reorder-util.js.map
 
 /***/ }),
-/* 144 */
+/* 145 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -76226,7 +76649,7 @@ var Chip = (function (_super) {
 //# sourceMappingURL=chip.js.map
 
 /***/ }),
-/* 145 */
+/* 146 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -77462,7 +77885,7 @@ var DEFAULT_FORMAT = 'MMM D, YYYY';
 //# sourceMappingURL=datetime.js.map
 
 /***/ }),
-/* 146 */
+/* 147 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -77628,7 +78051,7 @@ var picker_Picker = (function (_super) {
 //# sourceMappingURL=picker.js.map
 
 /***/ }),
-/* 147 */
+/* 148 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -77637,7 +78060,7 @@ var picker_Picker = (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__platform_platform__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__gestures_ui_event_manager__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__fab__ = __webpack_require__(61);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__fab_list__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__fab_list__ = __webpack_require__(87);
 
 
 
@@ -77814,7 +78237,7 @@ var FabContainer = (function () {
 //# sourceMappingURL=fab-container.js.map
 
 /***/ }),
-/* 148 */
+/* 149 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -78213,14 +78636,14 @@ function getUnitValue(val) {
 //# sourceMappingURL=img.js.map
 
 /***/ }),
-/* 149 */
+/* 150 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InfiniteScrollContent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_config__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__infinite_scroll__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__infinite_scroll__ = __webpack_require__(88);
 
 
 
@@ -78270,7 +78693,7 @@ var InfiniteScrollContent = (function () {
 //# sourceMappingURL=infinite-scroll-content.js.map
 
 /***/ }),
-/* 150 */
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78281,7 +78704,7 @@ Observable_1.Observable.prototype.takeUntil = takeUntil_1.takeUntil;
 //# sourceMappingURL=takeUntil.js.map
 
 /***/ }),
-/* 151 */
+/* 152 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -78330,7 +78753,7 @@ var ItemDivider = (function (_super) {
 //# sourceMappingURL=item-divider.js.map
 
 /***/ }),
-/* 152 */
+/* 153 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -78354,429 +78777,6 @@ var ItemGroup = (function () {
 }());
 
 //# sourceMappingURL=item-group.js.map
-
-/***/ }),
-/* 153 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ItemSliding; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util_util__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__item__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__list_list__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__platform_platform__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__item_options__ = __webpack_require__(88);
-
-
-
-
-
-
-var SWIPE_MARGIN = 30;
-var ELASTIC_FACTOR = 0.55;
-var ITEM_SIDE_FLAG_NONE = 0;
-var ITEM_SIDE_FLAG_LEFT = 1 << 0;
-var ITEM_SIDE_FLAG_RIGHT = 1 << 1;
-var ITEM_SIDE_FLAG_BOTH = ITEM_SIDE_FLAG_LEFT | ITEM_SIDE_FLAG_RIGHT;
-/**
- * @name ItemSliding
- * @description
- * A sliding item is a list item that can be swiped to reveal buttons. It requires
- * an [Item](../Item) component as a child and a [List](../../list/List) component as
- * a parent. All buttons to reveal can be placed in the `<ion-item-options>` element.
- *
- * @usage
- * ```html
- * <ion-list>
- *   <ion-item-sliding #item>
- *     <ion-item>
- *       Item
- *     </ion-item>
- *     <ion-item-options side="left">
- *       <button ion-button (click)="favorite(item)">Favorite</button>
- *       <button ion-button color="danger" (click)="share(item)">Share</button>
- *     </ion-item-options>
- *
- *     <ion-item-options side="right">
- *       <button ion-button (click)="unread(item)">Unread</button>
- *     </ion-item-options>
- *   </ion-item-sliding>
- * </ion-list>
- * ```
- *
- * ### Swipe Direction
- * By default, the buttons are revealed when the sliding item is swiped from right to left,
- * so the buttons are placed in the right side. But it's also possible to reveal them
- * in the right side (sliding from left to right) by setting the `side` attribute
- * on the `ion-item-options` element. Up to 2 `ion-item-options` can used at the same time
- * in order to reveal two different sets of buttons depending the swipping direction.
- *
- * ```html
- * <ion-item-options side="right">
- *   <button ion-button (click)="archive(item)">
- *     <ion-icon name="archive"></ion-icon>
- *     Archive
- *   </button>
- * </ion-item-options>
- *
- * <ion-item-options side="left">
- *   <button ion-button (click)="archive(item)">
- *     <ion-icon name="archive"></ion-icon>
- *     Archive
- *   </button>
- * </ion-item-options>
- * ```
- *
- * ### Listening for events (ionDrag) and (ionSwipe)
- * It's possible to know the current relative position of the sliding item by subscribing
- * to the (ionDrag)` event.
- *
- * ```html
- * <ion-item-sliding (ionDrag)="logDrag($event)">
- *   <ion-item>Item</ion-item>
- *   <ion-item-options>
- *     <button ion-button>Favorite</button>
- *   </ion-item-options>
- * </ion-item-sliding>
- * ```
- *
- * ### Button Layout
- * If an icon is placed with text in the option button, by default it will
- * display the icon on top of the text. This can be changed to display the icon
- * to the left of the text by setting `icon-start` as an attribute on the
- * `<ion-item-options>` element.
- *
- * ```html
- * <ion-item-options icon-start>
- *    <button ion-button (click)="archive(item)">
- *      <ion-icon name="archive"></ion-icon>
- *      Archive
- *    </button>
- *  </ion-item-options>
- *
- * ```
- *
- * ### Expandable Options
- *
- * Options can be expanded to take up the full width of the item if you swipe past
- * a certain point. This can be combined with the `ionSwipe` event to call methods
- * on the class.
- *
- * ```html
- *
- * <ion-item-sliding>
- *   <ion-item>Item</ion-item>
- *   <ion-item-options (ionSwipe)="delete(item)">
- *     <button ion-button expandable (click)="delete(item)">Delete</button>
- *   </ion-item-options>
- * </ion-item-sliding>
- * ```
- *
- * We can call `delete` by either clicking the button, or by doing a full swipe on the item.
- *
- * @demo /docs/demos/src/item-sliding/
- * @see {@link /docs/components#lists List Component Docs}
- * @see {@link ../Item Item API Docs}
- * @see {@link ../../list/List List API Docs}
- */
-var ItemSliding = (function () {
-    function ItemSliding(list, _plt, _renderer, _elementRef, _zone) {
-        this._plt = _plt;
-        this._renderer = _renderer;
-        this._elementRef = _elementRef;
-        this._zone = _zone;
-        this._openAmount = 0;
-        this._startX = 0;
-        this._optsWidthRightSide = 0;
-        this._optsWidthLeftSide = 0;
-        this._tmr = null;
-        this._optsDirty = true;
-        this._state = 2 /* Disabled */;
-        /**
-         * @output {event} Emitted when the sliding position changes.
-         * It reports the relative position.
-         *
-         * ```ts
-         * ondrag(item) {
-         *   let percent = item.getSlidingPercent();
-         *   if (percent > 0) {
-         *     // positive
-         *     console.log('right side');
-         *   } else {
-         *     // negative
-         *     console.log('left side');
-         *   }
-         *   if (Math.abs(percent) > 1) {
-         *     console.log('overscroll');
-         *   }
-         * }
-         * ```
-         *
-         */
-        this.ionDrag = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["r" /* EventEmitter */]();
-        list && list.containsSlidingItem(true);
-        _elementRef.nativeElement.$ionComponent = this;
-        this.setElementClass('item-wrapper', true);
-    }
-    Object.defineProperty(ItemSliding.prototype, "_itemOptions", {
-        set: function (itemOptions) {
-            var sides = 0;
-            // Reset left and right options in case they were removed
-            this._leftOptions = this._rightOptions = null;
-            for (var _i = 0, _a = itemOptions.toArray(); _i < _a.length; _i++) {
-                var item = _a[_i];
-                if (item.isRightSide()) {
-                    this._rightOptions = item;
-                    sides |= ITEM_SIDE_FLAG_RIGHT;
-                }
-                else {
-                    this._leftOptions = item;
-                    sides |= ITEM_SIDE_FLAG_LEFT;
-                }
-            }
-            this._optsDirty = true;
-            this._sides = sides;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * @hidden
-     */
-    ItemSliding.prototype.getOpenAmount = function () {
-        return this._openAmount;
-    };
-    /**
-     * @hidden
-     */
-    ItemSliding.prototype.getSlidingPercent = function () {
-        var openAmount = this._openAmount;
-        if (openAmount > 0) {
-            return openAmount / this._optsWidthRightSide;
-        }
-        else if (openAmount < 0) {
-            return openAmount / this._optsWidthLeftSide;
-        }
-        else {
-            return 0;
-        }
-    };
-    /**
-     * @hidden
-     */
-    ItemSliding.prototype.startSliding = function (startX) {
-        if (this._tmr) {
-            this._plt.cancelTimeout(this._tmr);
-            this._tmr = null;
-        }
-        if (this._openAmount === 0) {
-            this._optsDirty = true;
-            this._setState(4 /* Enabled */);
-        }
-        this._startX = startX + this._openAmount;
-        this.item.setElementStyle(this._plt.Css.transition, 'none');
-    };
-    /**
-     * @hidden
-     */
-    ItemSliding.prototype.moveSliding = function (x) {
-        if (this._optsDirty) {
-            this.calculateOptsWidth();
-            return;
-        }
-        var openAmount = (this._startX - x);
-        switch (this._sides) {
-            case ITEM_SIDE_FLAG_RIGHT:
-                openAmount = Math.max(0, openAmount);
-                break;
-            case ITEM_SIDE_FLAG_LEFT:
-                openAmount = Math.min(0, openAmount);
-                break;
-            case ITEM_SIDE_FLAG_BOTH: break;
-            case ITEM_SIDE_FLAG_NONE: return;
-            default:
-                (void 0) /* assert */;
-                break;
-        }
-        if (openAmount > this._optsWidthRightSide) {
-            var optsWidth = this._optsWidthRightSide;
-            openAmount = optsWidth + (openAmount - optsWidth) * ELASTIC_FACTOR;
-        }
-        else if (openAmount < -this._optsWidthLeftSide) {
-            var optsWidth = -this._optsWidthLeftSide;
-            openAmount = optsWidth + (openAmount - optsWidth) * ELASTIC_FACTOR;
-        }
-        this._setOpenAmount(openAmount, false);
-        return openAmount;
-    };
-    /**
-     * @hidden
-     */
-    ItemSliding.prototype.endSliding = function (velocity) {
-        var restingPoint = (this._openAmount > 0)
-            ? this._optsWidthRightSide
-            : -this._optsWidthLeftSide;
-        // Check if the drag didn't clear the buttons mid-point
-        // and we aren't moving fast enough to swipe open
-        var isResetDirection = (this._openAmount > 0) === !(velocity < 0);
-        var isMovingFast = Math.abs(velocity) > 0.3;
-        var isOnCloseZone = Math.abs(this._openAmount) < Math.abs(restingPoint / 2);
-        if (Object(__WEBPACK_IMPORTED_MODULE_1__util_util__["t" /* swipeShouldReset */])(isResetDirection, isMovingFast, isOnCloseZone)) {
-            restingPoint = 0;
-        }
-        this.fireSwipeEvent();
-        this._setOpenAmount(restingPoint, true);
-        return restingPoint;
-    };
-    /**
-     * @hidden
-     */
-    ItemSliding.prototype.fireSwipeEvent = function () {
-        var _this = this;
-        if (this._state & 32 /* SwipeRight */) {
-            this._zone.run(function () { return _this._rightOptions.ionSwipe.emit(_this); });
-        }
-        else if (this._state & 64 /* SwipeLeft */) {
-            this._zone.run(function () { return _this._leftOptions.ionSwipe.emit(_this); });
-        }
-    };
-    /**
-     * @hidden
-     */
-    ItemSliding.prototype.calculateOptsWidth = function () {
-        if (!this._optsDirty) {
-            return;
-        }
-        this._optsWidthRightSide = 0;
-        if (this._rightOptions) {
-            this._optsWidthRightSide = this._rightOptions.width();
-            (void 0) /* assert */;
-        }
-        this._optsWidthLeftSide = 0;
-        if (this._leftOptions) {
-            this._optsWidthLeftSide = this._leftOptions.width();
-            (void 0) /* assert */;
-        }
-        this._optsDirty = false;
-    };
-    ItemSliding.prototype._setOpenAmount = function (openAmount, isFinal) {
-        var _this = this;
-        var platform = this._plt;
-        if (this._tmr) {
-            platform.cancelTimeout(this._tmr);
-            this._tmr = null;
-        }
-        this._openAmount = openAmount;
-        if (isFinal) {
-            this.item.setElementStyle(platform.Css.transition, '');
-        }
-        if (openAmount > 0) {
-            var state = (openAmount >= (this._optsWidthRightSide + SWIPE_MARGIN))
-                ? 8 /* Right */ | 32 /* SwipeRight */
-                : 8 /* Right */;
-            this._setState(state);
-        }
-        else if (openAmount < 0) {
-            var state_1 = (openAmount <= (-this._optsWidthLeftSide - SWIPE_MARGIN))
-                ? 16 /* Left */ | 64 /* SwipeLeft */
-                : 16 /* Left */;
-            this._setState(state_1);
-        }
-        else {
-            (void 0) /* assert */;
-            this._tmr = platform.timeout(function () {
-                _this._setState(2 /* Disabled */);
-                _this._tmr = null;
-            }, 600);
-            this.item.setElementStyle(platform.Css.transform, '');
-            return;
-        }
-        this.item.setElementStyle(platform.Css.transform, "translate3d(" + -openAmount + "px,0,0)");
-        var ionDrag = this.ionDrag;
-        if (ionDrag.observers.length > 0) {
-            ionDrag.emit(this);
-        }
-    };
-    ItemSliding.prototype._setState = function (state) {
-        if (state === this._state) {
-            return;
-        }
-        this.setElementClass('active-slide', (state !== 2 /* Disabled */));
-        this.setElementClass('active-options-right', !!(state & 8 /* Right */));
-        this.setElementClass('active-options-left', !!(state & 16 /* Left */));
-        this.setElementClass('active-swipe-right', !!(state & 32 /* SwipeRight */));
-        this.setElementClass('active-swipe-left', !!(state & 64 /* SwipeLeft */));
-        this._state = state;
-    };
-    /**
-     * Close the sliding item. Items can also be closed from the [List](../../list/List).
-     *
-     * The sliding item can be closed by grabbing a reference to `ItemSliding`. In the
-     * below example, the template reference variable `slidingItem` is placed on the element
-     * and passed to the `share` method.
-     *
-     * ```html
-     * <ion-list>
-     *   <ion-item-sliding #slidingItem>
-     *     <ion-item>
-     *       Item
-     *     </ion-item>
-     *     <ion-item-options>
-     *       <button ion-button (click)="share(slidingItem)">Share</button>
-     *     </ion-item-options>
-     *   </ion-item-sliding>
-     * </ion-list>
-     * ```
-     *
-     * ```ts
-     * import { Component } from '@angular/core';
-     * import { ItemSliding } from 'ionic-angular';
-     *
-     * @Component({...})
-     * export class MyClass {
-     *   constructor() { }
-     *
-     *   share(slidingItem: ItemSliding) {
-     *     slidingItem.close();
-     *   }
-     * }
-     * ```
-     */
-    ItemSliding.prototype.close = function () {
-        this._setOpenAmount(0, true);
-    };
-    /**
-     * @hidden
-     */
-    ItemSliding.prototype.setElementClass = function (cssClass, shouldAdd) {
-        this._renderer.setElementClass(this._elementRef.nativeElement, cssClass, shouldAdd);
-    };
-    ItemSliding.decorators = [
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* Component */], args: [{
-                    selector: 'ion-item-sliding',
-                    template: "\n    <ng-content select=\"ion-item,[ion-item]\"></ng-content>\n    <ng-content select=\"ion-item-options\"></ng-content>\n  ",
-                    changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["h" /* ChangeDetectionStrategy */].OnPush,
-                    encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_1" /* ViewEncapsulation */].None
-                },] },
-    ];
-    /** @nocollapse */
-    ItemSliding.ctorParameters = function () { return [
-        { type: __WEBPACK_IMPORTED_MODULE_3__list_list__["a" /* List */], decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["H" /* Optional */] },] },
-        { type: __WEBPACK_IMPORTED_MODULE_4__platform_platform__["a" /* Platform */], },
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Renderer */], },
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* ElementRef */], },
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* NgZone */], },
-    ]; };
-    ItemSliding.propDecorators = {
-        'item': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* ContentChild */], args: [__WEBPACK_IMPORTED_MODULE_2__item__["a" /* Item */],] },],
-        'ionDrag': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* Output */] },],
-        '_itemOptions': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* ContentChildren */], args: [Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* forwardRef */])(function () { return __WEBPACK_IMPORTED_MODULE_5__item_options__["a" /* ItemOptions */]; }),] },],
-    };
-    return ItemSliding;
-}());
-
-//# sourceMappingURL=item-sliding.js.map
 
 /***/ }),
 /* 154 */
@@ -80554,7 +80554,7 @@ var Scroll = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_config__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__util_base_input__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__util_util__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__util_debouncer__ = __webpack_require__(141);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__util_debouncer__ = __webpack_require__(142);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__platform_platform__ = __webpack_require__(3);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
@@ -81087,8 +81087,8 @@ var Segment = (function (_super) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Select; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__action_sheet_action_sheet__ = __webpack_require__(82);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__alert_alert__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__action_sheet_action_sheet__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__alert_alert__ = __webpack_require__(85);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__popover_popover__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_app__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__config_config__ = __webpack_require__(1);
@@ -85610,7 +85610,7 @@ var AlertCmpNgFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* ɵc
 /* unused harmony export View_IonicApp_Host_0 */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return IonicAppNgFactory; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__overlay_portal__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__overlay_portal__ = __webpack_require__(81);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_config__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__platform_platform__ = __webpack_require__(3);
@@ -85963,7 +85963,7 @@ var PopoverCmpNgFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* �
 var core = __webpack_require__(0);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item.ngfactory.js + 1 modules
-var item_ngfactory = __webpack_require__(121);
+var item_ngfactory = __webpack_require__(122);
 
 // EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item.js
 var item = __webpack_require__(15);
@@ -86226,8 +86226,8 @@ var ContentNgFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* ɵcc
 "use strict";
 
 var Subscriber_1 = __webpack_require__(34);
-var rxSubscriber_1 = __webpack_require__(77);
-var Observer_1 = __webpack_require__(129);
+var rxSubscriber_1 = __webpack_require__(78);
+var Observer_1 = __webpack_require__(130);
 function toSubscriber(nextOrObserver, error, complete) {
     if (nextOrObserver) {
         if (nextOrObserver instanceof Subscriber_1.Subscriber) {
@@ -86326,7 +86326,7 @@ exports.noop = noop;
 
 var Observable_1 = __webpack_require__(13);
 var ArrayObservable_1 = __webpack_require__(201);
-var isScheduler_1 = __webpack_require__(132);
+var isScheduler_1 = __webpack_require__(133);
 var mergeAll_1 = __webpack_require__(203);
 /* tslint:enable:max-line-length */
 /**
@@ -86427,8 +86427,8 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var Observable_1 = __webpack_require__(13);
 var ScalarObservable_1 = __webpack_require__(202);
-var EmptyObservable_1 = __webpack_require__(131);
-var isScheduler_1 = __webpack_require__(132);
+var EmptyObservable_1 = __webpack_require__(132);
+var isScheduler_1 = __webpack_require__(133);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -86676,8 +86676,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var subscribeToResult_1 = __webpack_require__(78);
-var OuterSubscriber_1 = __webpack_require__(79);
+var subscribeToResult_1 = __webpack_require__(79);
+var OuterSubscriber_1 = __webpack_require__(80);
 /* tslint:enable:max-line-length */
 /**
  * Projects each source value to an Observable which is merged in the output
@@ -87000,7 +87000,7 @@ exports.share = share;
 "use strict";
 
 var multicast_1 = __webpack_require__(212);
-var refCount_1 = __webpack_require__(133);
+var refCount_1 = __webpack_require__(134);
 var Subject_1 = __webpack_require__(45);
 function shareSubjectFactory() {
     return new Subject_1.Subject();
@@ -87104,7 +87104,7 @@ var Subject_1 = __webpack_require__(45);
 var Observable_1 = __webpack_require__(13);
 var Subscriber_1 = __webpack_require__(34);
 var Subscription_1 = __webpack_require__(39);
-var refCount_1 = __webpack_require__(133);
+var refCount_1 = __webpack_require__(134);
 /**
  * @class ConnectableObservable<T>
  */
@@ -87367,10 +87367,10 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(13);
-var EmptyObservable_1 = __webpack_require__(131);
-var isArray_1 = __webpack_require__(126);
-var subscribeToResult_1 = __webpack_require__(78);
-var OuterSubscriber_1 = __webpack_require__(79);
+var EmptyObservable_1 = __webpack_require__(132);
+var isArray_1 = __webpack_require__(127);
+var subscribeToResult_1 = __webpack_require__(79);
+var OuterSubscriber_1 = __webpack_require__(80);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -87898,8 +87898,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var OuterSubscriber_1 = __webpack_require__(79);
-var subscribeToResult_1 = __webpack_require__(78);
+var OuterSubscriber_1 = __webpack_require__(80);
+var subscribeToResult_1 = __webpack_require__(79);
 /**
  * Emits the values emitted by the source Observable until a `notifier`
  * Observable emits a value.
@@ -87990,9 +87990,9 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(13);
-var tryCatch_1 = __webpack_require__(128);
-var isFunction_1 = __webpack_require__(75);
-var errorObject_1 = __webpack_require__(76);
+var tryCatch_1 = __webpack_require__(129);
+var isFunction_1 = __webpack_require__(76);
+var errorObject_1 = __webpack_require__(77);
 var Subscription_1 = __webpack_require__(39);
 var toString = Object.prototype.toString;
 function isNodeStyleEventEmitter(sourceObj) {
